@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "main": "server.js",
+  "name": "video_raspberry",
+  "author": "Ideware Sistemas",
+  "description": "A NodeJS video player for Raspberry Pi using omxplayer"
+}
