@@ -29,7 +29,13 @@ $ git clone [url-do-repositorio]
 $ cd ufmgraspberryserver
 ```
 
-Então, para rodar o servidor, execute na linha de comando:
+Então, prepare a plataforma e baixe os módulos:
+
+```sh
+$ npm install
+```
+
+Para rodar o servidor, execute na linha de comando:
 
 ```sh
 $ npm start 
