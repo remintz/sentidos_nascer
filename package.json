@@ -3,5 +3,11 @@
   "main": "server.js",
   "name": "video_raspberry",
   "author": "Ideware Sistemas",
-  "description": "A NodeJS video player for Raspberry Pi using omxplayer"
+  "description": "A NodeJS video player for Raspberry Pi using omxplayer",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "method-override": "^2.3.6",
+    "node-omxplayer": "^0.4.1"
+  }
 }
