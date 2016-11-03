@@ -5,6 +5,7 @@
 var express         = require('express');
 var bodyParser      = require('body-parser');
 var methodOverride  = require('method-override');
+var cors 	    = require('cors');
 
 // configuration ===========================================
 var app = express();
@@ -15,6 +16,9 @@ var port = 1337;
 // get all data/stuff of the body (POST) parameters
 // parse application/json 
 app.use(bodyParser.json());
+
+// enabling cors
+app.use(cors());
 
 // parse application/vnd.api+json as json
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));

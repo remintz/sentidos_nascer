@@ -12,9 +12,7 @@ module.exports = function (app) {
     // starts a video on the raspberry pi
     app.post('/api/start', startOmx);
     // plays a video on the raspberry pi
-    app.post('/api/play', playOmx);
-    // pauses a video on the raspberry pi
-    app.post('/api/pause', pauseOmx);
+    app.post('/api/play-pause', playOmx);
     // stops a video on the raspberry pi
     app.post('/api/stop',  stopOmx);
 
@@ -31,16 +29,6 @@ module.exports = function (app) {
         if (videoPlayer){
             videoPlayer.play();
             res.json({'success': true, 'playing': true})
-        }else{
-            res.status(404);
-            res.json({'success': false, 'playing': false})
-        }
-    }
-
-    function pauseOmx (req, res) {
-        if (videoPlayer){
-            videoPlayer.pause();
-            res.json({'success': true, 'playing': false})
         }else{
             res.status(404);
             res.json({'success': false, 'playing': false})

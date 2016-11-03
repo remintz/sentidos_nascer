@@ -2,5 +2,5 @@
 
 // exporting module =======================================
 module.exports = {
-    piNumber: 'lasier'
+    piNumber: 'placa_1'
 }
