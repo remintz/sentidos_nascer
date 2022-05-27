@@ -29,8 +29,7 @@ module.exports = function (app) {
             return;
         } 
         var videoPath = '/home/pi/videos/' + config.piNumber + '.mp4';
-        var date_ob = new Date();
-        var delay = (60 - date_ob.getSeconds())*1000;
+        var delay = 3000;
         videoPlayer = omxplayer(videoPath, 'hdmi', true);
         videoPlayer.pause();
 
